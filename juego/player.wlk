@@ -35,39 +35,40 @@ object rick {
   }
 }
 
-object rata {
-
-  var posicion = game.at(5,5)
-  var imageRick = "rata0.png"
+class Ratas {
+  var posicion
+  var imageRata = "rata0.png"
   
-  method image () = imageRick
+  method image () = imageRata
   method position() = posicion
 
   method derecha() {
-    imageRick = "rata7.png"
+    imageRata = "rata7.png"
     posicion = posicion.right(0.5)
-    game.schedule(200, {imageRick = "rata6.png"})
+    game.schedule(200, {imageRata = "rata6.png"})
     posicion = posicion.right(0.5)
   }
 
   method izquierda() {
-    imageRick = "rata3.png"
+    imageRata = "rata3.png"
     posicion = posicion.left(0.5)
-    game.schedule(200, {imageRick = "rata2.png"})
+    game.schedule(200, {imageRata = "rata2.png"})
     posicion = posicion.left(0.5)
   }
 
   method arriba() {
-    imageRick = "rata5.png"
+    imageRata = "rata5.png"
     posicion = posicion.up(0.5)
-    game.schedule(200, {imageRick = "rata4.png"})
+    game.schedule(200, {imageRata = "rata4.png"})
     posicion = posicion.up(0.5)
   }
 
   method abajo() {
-    imageRick = "rata1.png"
+    imageRata = "rata1.png"
     posicion = posicion.down(0.5)
-    game.schedule(200, {imageRick = "rata0.png"})
+    game.schedule(200, {imageRata = "rata0.png"})
     posicion = posicion.down(0.5)
   }
 }
+
+const rata = new Ratas(posicion = game.at(5,5))
