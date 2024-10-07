@@ -99,3 +99,21 @@
 {"level":"info","message":"⌛ Validating juego/player.wlk","timeElapsed":187,"timestamp":"2024-09-24T21:17:44.303Z"}
 {"level":"info","message":"⌛ Validating juego/nivel1.wlk","timeElapsed":127,"timestamp":"2024-09-24T21:17:44.431Z"}
 {"level":"info","message":"⌛ Validating juego/intro.wlk","timeElapsed":144,"timestamp":"2024-09-24T21:17:44.575Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":250,"timestamp":"2024-10-05T19:20:16.805Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/rodri/Documents/wollok/juego_final/tp_final","timestamp":"2024-10-05T19:20:16.823Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":159,"timestamp":"2024-10-05T19:20:16.984Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":155,"timestamp":"2024-10-05T19:20:17.183Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":111,"timestamp":"2024-10-05T19:20:17.295Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":107,"timestamp":"2024-10-05T19:20:17.404Z"}
+{"level":"info","message":"⌛ Validating juego/main.wpgm","timeElapsed":203,"timestamp":"2024-10-05T19:20:17.608Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":168,"timestamp":"2024-10-05T19:20:17.778Z"}
+{"level":"info","message":"⌛ Validating juego/player.wlk","timeElapsed":234,"timestamp":"2024-10-05T19:20:18.030Z"}
+{"level":"info","message":"⌛ Validating juego/nivel1.wlk","timeElapsed":193,"timestamp":"2024-10-05T19:20:18.227Z"}
+{"level":"info","message":"⌛ Validating juego/intro.wlk","timeElapsed":140,"timestamp":"2024-10-05T19:20:18.368Z"}
+{"level":"info","message":"⌛ Validating juego/main.wpgm","timeElapsed":155,"timestamp":"2024-10-05T19:20:18.571Z"}
+{"level":"info","message":"⌛ Validating juego/player.wlk","timeElapsed":159,"timestamp":"2024-10-05T19:20:18.732Z"}
+{"level":"info","message":"⌛ Validating juego/nivel1.wlk","timeElapsed":112,"timestamp":"2024-10-05T19:20:18.845Z"}
+{"level":"info","message":"⌛ Validating juego/intro.wlk","timeElapsed":123,"timestamp":"2024-10-05T19:20:18.968Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":152,"timestamp":"2024-10-05T19:21:05.190Z"}
+{"level":"info","message":"⌛ Validating juego/main.wpgm","timeElapsed":347,"timestamp":"2024-10-05T19:21:05.563Z"}
+{"exitCode":{},"level":"info","message":"👾 Game executed juego.main.mingoGame on c:\\Users\\rodri\\Documents\\wollok\\juego_final\\tp_final","timeElapsed":1008,"timestamp":"2024-10-05T19:21:13.162Z"}

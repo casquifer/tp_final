@@ -80,5 +80,8 @@ object jugarla {
     game.onTick(300, "titilaPortal2", {portal2.titila()})
     game.onTick(2000, "titilaArma", {arma.titila()})
     game.onTick(2000, "titilaPlaca", {placa.titila()})
+    game.onTick(400, "distanciaConRickX", {rata.guardarPositionRicX()})
+    game.onTick(400, "distanciaConRickY", {rata.guardarPositionRicY()})
+    game.onTick(500, "perseguir", {rata.perseguir()})
   }
 }
