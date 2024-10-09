@@ -36,7 +36,7 @@ object rick {
 }
 
 class Ratas {
-  var posicion
+  var posicion 
   var imageRata = "rata0.png"
   
   method image () = imageRata
@@ -84,6 +84,14 @@ class Ratas {
     }  
   }
 
+  /*
+  method kill(){
+      game.removeVisual(self)
+  }
+  */
+
 }
 
 const rata = new Ratas(posicion = game.at(0,0))
+const rata2 = new Ratas(posicion = game.at(12,0))
+const rata3 = new Ratas(posicion = game.at(0,12))

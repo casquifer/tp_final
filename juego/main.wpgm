@@ -1,7 +1,7 @@
 import wollok.game.*
 import intro.*
 
-program mingoGame {
+program picleRick {
 	primeraPantalla.inicio()
 	game.start()
 }
