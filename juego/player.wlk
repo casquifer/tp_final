@@ -84,11 +84,9 @@ class Ratas {
     }  
   }
 
-  /*
   method kill(){
       game.removeVisual(self)
   }
-  */
 
 }
 

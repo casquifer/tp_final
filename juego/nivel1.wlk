@@ -82,6 +82,8 @@ class Lasers {
   }
 
   method disparar () {
+    game.onCollideDo(self, {n => n.kill() //cada vez que choque algo  lo mata,si el objeto entiende el metodo kill()
+    self.kill()}) //y ademas el rayo se destruye
     if(rick.image() == "rick0.png" or rick.image() == "rick1.png"){
       imagen = "laser1.png"
       game.addVisual(self)
@@ -100,11 +102,10 @@ class Lasers {
       game.onTick(200, "laserDerecha", {self.laserDerecha()})
     }
   }
-  /*
+  
   method kill(){
     game.removeVisual(self)
-  }
-  */
+  }  
 }
 
 object jugarla {
@@ -136,6 +137,6 @@ object jugarla {
     game.onTick(900, "perseguir2", {rata2.perseguir()})
     game.onTick(1000, "perseguir3", {rata3.perseguir()})
 
-    keyboard.f().onPressDo({const laser new Lasers().disparar()}) //cada vez que apreto F creo un obejeto laser con la clase Lasers y lo disparo
+    keyboard.f().onPressDo({new Lasers().disparar()}) //cada vez que apreto F creo un obejeto laser con la clase Lasers y lo disparo
   }
 }
