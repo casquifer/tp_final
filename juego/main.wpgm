@@ -1,7 +1,8 @@
 import wollok.game.*
 import intro.*
 
-program picleRick {
+//---------------------------- PLAP GAMES ----------------------------------
+program plapGames {
 	primeraPantalla.inicio()
 	game.start()
 }
