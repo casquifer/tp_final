@@ -13,10 +13,10 @@ object niveles {
   const alto = 12  //se mide en celdas de 50 x 50px
 
   method nivel1() {
-
+    
       config.removerVisuales()
 
-      game.addVisual(fondoRojo)
+      game.addVisual(mapa0)
       game.title("Pickle Rick")
       game.height(alto) 
       game.width(ancho)
@@ -43,10 +43,10 @@ object niveles {
 
   }
 
-  method nivel3() {
+  method nivel2() {
       config.removerVisuales()
       
-      game.addVisual(fondoRojo)
+      game.addVisual(mapa1)
       game.title("Pickle Rick")
 
       config.crearPortal(0,5)
@@ -59,4 +59,48 @@ object niveles {
 
   }
 
+  method nivel3() {
+      config.removerVisuales()
+      
+      game.addVisual(mapa2)
+      game.title("Pickle Rick")
+
+      config.crearPortal(0,5)
+      config.crearPortal(11,5)
+
+      config.printearLoQueTenemos()
+      
+      game.addVisual(rata)
+      game.addVisual(rick)
+
+  }
+
+  method nivel4() {
+      config.removerVisuales()
+      
+      game.addVisual(mapa3)
+      game.title("Pickle Rick")
+
+      config.crearPortal(0,5)
+      config.crearPortal(11,5)
+
+      config.printearLoQueTenemos()
+      
+      game.addVisual(rata)
+      game.addVisual(rick)
+
+  }
+
+  method nivel5() {
+      config.removerVisuales()
+      
+      game.addVisual(mapa4)
+      game.title("Pickle Rick")
+
+      config.printearLoQueTenemos()
+      
+      game.addVisual(rata)
+      game.addVisual(rick)
+  }
+  
 }

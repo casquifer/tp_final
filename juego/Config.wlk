@@ -86,7 +86,7 @@ object config{
   // Pichium
   method disparar(){
     if (self.tenemosPistola()){
-      new Lasers().disparar() 
+      new Lasers().disparar()
     }
   }
 }

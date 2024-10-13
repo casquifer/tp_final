@@ -11,7 +11,7 @@ import Mapas.*
 class Portales {
   var image = "portal0.png"
   var position
-  var property mapa = niveles.nivel3()
+  //var property mapa = niveles.nivel3()
 
   method image () = image
   
@@ -23,8 +23,21 @@ class Portales {
     game.schedule(75, {image = "portal3.png"})
     game.schedule(75, {image = "portal0.png"})
   }
-  method agarrado(objeto) {
-      self.mapa()
+}
+
+object transicion {
+  var image = "portalGrande0.png"
+  var position = game.origin()
+
+  method image () = image
+  
+  method position() = position
+  
+  method titila() {
+    image = "portalGrande1.png"
+    game.schedule(75, {image = "portalGrande2.png"})
+    game.schedule(75, {image = "portalGrande3.png"})
+    game.schedule(75, {image = "portalGrande0.png"})
   }
 }
 

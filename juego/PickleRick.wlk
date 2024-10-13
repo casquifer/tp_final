@@ -51,7 +51,7 @@ object rick {
   }
 
   method arriba() {
-    if(self.position().y() < (game.height() - 1)){
+    if(self.position().y() < (game.height() - 2)){
       imageRick = "rickespalda2.png"
       posicion = posicion.up(0.5)
       game.schedule(200, {imageRick = "rickespalda1.png"})
@@ -70,7 +70,8 @@ object rick {
 
   method esPortal(objeto){
     if (objeto.className() == "Objetos.Portales"){
-      objeto.mapa()
+      //objeto.mapa()
+      mapaRandom.elegirMapa()
     } else {self.agarrar(objeto)}
   }
   
