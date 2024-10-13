@@ -89,6 +89,7 @@ class Placas {
 class Lasers {
   var posicion = rick.position()
   var imagen = "laserX.png"
+  var id = 0
 
   method image () = imagen
 
@@ -110,37 +111,43 @@ class Lasers {
     posicion = posicion.up(1)
   }
 
+  method crearID(){
+    id = id + 1
+  }
+
   method disparar () {
+    self.crearID()
     game.onCollideDo(self, {n => n.kill() //cada vez que choque algo  lo mata,si el objeto entiende el metodo kill()
     self.kill()}) //y ademas el rayo se destruye
     if(rick.image() == "rickfrente1.png" or rick.image() == "rickfrente2.png"){
       game.schedule(300, {
         imagen = "laserY.png" 
         game.addVisual(self) 
-        game.onTick(200, "laserAbajo", {if (self.position().y() > 0){self.laserAbajo()} else {self.kill()}}) //cuando sale de la pantalla muere el rayo
+        game.onTick(200, "laser" + id.toString(), {if (self.position().y() > 0){self.laserAbajo()} else {self.kill()}}) //cuando sale de la pantalla muere el rayo
       })
     } else if(rick.image() == "rickizquierda1.png" or rick.image() == "rickizquierda2.png"){
       game.schedule(300, {
           imagen = "laserX.png"
           game.addVisual(self)
-          game.onTick(200, "laserIzquierda", {if (self.position().x() > 0){self.laserIzquierda()} else {self.kill()}})
+          game.onTick(200, "laser" + id.toString(), {if (self.position().x() > 0){self.laserIzquierda()} else {self.kill()}})
       })    
     } else if(rick.image() == "rickespalda1.png" or rick.image() == "rickespalda2.png"){
       game.schedule(300, {
         imagen = "laserY.png"
         game.addVisual(self)
-        game.onTick(200, "laserArriba", {if (self.position().y() < 12){self.laserArriba()} else {self.kill()}})
+        game.onTick(200, "laser" + id.toString(), {if (self.position().y() < 12){self.laserArriba()} else {self.kill()}})
       })  
     } else if(rick.image() == "rickderecha1.png" or rick.image() == "rickderecha2.png"){
       game.schedule(300, {
         imagen = "laserX.png"
         game.addVisual(self)
-        game.onTick(200, "laserDerecha", {if (self.position().x() < 12){self.laserDerecha()} else {self.kill()}})
+        game.onTick(200, "laser" + id.toString(), {if (self.position().x() < 12){self.laserDerecha()} else {self.kill()}})
       })
     } 
   }
   
   method kill(){
     game.removeVisual(self)
+    game.removeTickEvent("laser" + id.toString())
   }  
 }

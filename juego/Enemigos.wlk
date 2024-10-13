@@ -23,6 +23,7 @@ class Personajes {
 class Ratas  inherits Personajes (vida = 20, poder = 5) {
   var posicion
   var imageRata = "ratafrente1.png"
+  var id = 0
   
   method image () = imageRata
   method position() = posicion
@@ -68,8 +69,18 @@ class Ratas  inherits Personajes (vida = 20, poder = 5) {
     }  
   }
 
+  method crearId() {
+    id = id + 1 
+  }
+
+  method crearRata() {
+    self.crearId()
+    game.onTick(800, "perseguir" + id.toString(), {rata.perseguir()})
+  }
+
   method kill(){
       game.removeVisual(self)
+      game.removeTickEvent("perseguir" + id.toString())
   }
 
 }

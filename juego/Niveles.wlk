@@ -33,9 +33,9 @@ object niveles {
       game.addVisual(rata)
       game.addVisual(rata2)
       game.addVisual(rata3)
-      game.onTick(800, "perseguir", {rata.perseguir()})
-      game.onTick(900, "perseguir2", {rata2.perseguir()})
-      game.onTick(1000, "perseguir3", {rata3.perseguir()})
+      rata.crearRata()
+      rata2.crearRata()
+      rata3.crearRata()
 
       game.addVisual(rick)
 
@@ -56,6 +56,7 @@ object niveles {
       
       game.addVisual(rata)
       game.addVisual(rick)
+      rata.crearRata()
 
   }
 
@@ -72,6 +73,7 @@ object niveles {
       
       game.addVisual(rata)
       game.addVisual(rick)
+      rata.crearRata()
 
   }
 
@@ -88,6 +90,7 @@ object niveles {
       
       game.addVisual(rata)
       game.addVisual(rick)
+      rata.crearRata()
 
   }
 
@@ -101,6 +104,7 @@ object niveles {
       
       game.addVisual(rata)
       game.addVisual(rick)
+      rata.crearRata()
   }
   
 }
